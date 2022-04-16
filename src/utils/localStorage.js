@@ -1,4 +1,3 @@
-
 export function setLocalStorage(key, data) {
   localStorage.setItem(key, JSON.stringify({
     data: data,
@@ -10,8 +9,8 @@ export function getLocalStorage(key) {
     return null
   }
 
-  const {data } = JSON.parse(localStorage.getItem(key) || '{}')
-  if (!data ) {
+  const {data} = JSON.parse(localStorage.getItem(key) || '{}')
+  if (!data) {
     return null
   }
 
